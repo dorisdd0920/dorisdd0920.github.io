@@ -3,44 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0930_網站設計與賞析</title>
+    <title>安安，這裡是0$</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
-        header { background: #0078d7; color: #fff; padding: 1rem; text-align: center; }
-        main { padding:0; background:none; box-shadow:none; }
-        table { width:100%; max-width:800px; margin:2rem auto; background:#fff; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.05); overflow:hidden; border: 1px solid #bbb; border-collapse: collapse; }
-        td { vertical-align:top; padding:2rem; width:50%; border: 1px solid #ccc; }
-        .poem { flex: 1; }
-        .image-container { flex: 1; min-width: 250px; }
-        .image-container img { width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
-        footer { text-align: center; color: #888; margin: 2rem 0 1rem 0; }
+        /* 動畫效果 */
+        .japan-emoji {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+            animation: float-emoji 2.5s ease-in-out infinite;
+        }
+        @keyframes float-emoji {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+        h1 {
+            /* ...existing code... */
+            opacity: 0;
+            animation: fadein-title 1.2s 0.3s forwards;
+        }
+        @keyframes fadein-title {
+            from { opacity: 0; transform: translateY(24px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        p {
+            /* ...existing code... */
+            opacity: 0;
+            animation: slidein-p 1.2s 0.8s forwards;
+        }
+        @keyframes slidein-p {
+            from { opacity: 0; transform: translateY(32px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: 'Kosugi Maru', 'Noto Sans TC', sans-serif;
+            background: #f7f5ec;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .japan-box {
+            background: #fffef9;
+            border-radius: 20px;
+            box-shadow: 0 4px 24px #e6dccb44;
+            max-width: 420px;
+            margin: 2em auto;
+            padding: 2.5em 2em 2em 2em;
+            text-align: center;
+            border: 1.5px solid #e6dccb;
+        }
+        h1 {
+            font-family: 'Kosugi Maru', 'Noto Sans TC', sans-serif;
+            font-size: 2.2em;
+            color: #b48a78;
+            margin-bottom: 0.7em;
+            letter-spacing: 0.08em;
+        }
+        p {
+            color: #a89c8e;
+            font-size: 1.15em;
+            margin-bottom: 1.5em;
+        }
+        .japan-emoji {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Oo.唐詩三百首.oO</h1>
-    </header>
-    <main>
-        <table>
-            <tr>
-                <td>
-                    <div class="poem">
-                        <h2>登鸛雀樓</h2>
-                        白日依山盡，黃河入海流。<br>
-                        欲窮千里目，更上一層樓。<br>
-                        <div style="margin-top:1.5rem; color:#555; font-size:1rem;">— 王之涣</div>
-                    </div>
-                </td>
-                <td>
-                    <div class="image-container">
-                        <img src="pic1.jpg" alt="登鸛雀樓意境山水畫">
-                    </div>
-                </td>
-            </tr>
-        </table>
-    </main>
-    <footer>
-        &copy; 2025 我的網站
-    </footer>
+    <div class="japan-box">
+        <div class="japan-emoji">🌸🍃</div>
+        <h1>ようこそ！</h1>
+        <p>這裡是溫柔又簡約的日系小天地。<br>祝你今天心情平靜、溫暖又美好。</p>
+    </div>
 </body>
 </html>

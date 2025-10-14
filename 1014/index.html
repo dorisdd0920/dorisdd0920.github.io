@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=400, initial-scale=1.0">
+  <title>林虔安的名片</title>
+  <style>
+    body {
+      background: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      font-family: 'Segoe UI', '微軟正黑體', Arial, sans-serif;
+    }
+    .card-container {
+      display: flex;
+      width: 500px;
+      height: 240px;
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      overflow: hidden;
+    }
+    .card-left {
+      width: 45%;
+      background: linear-gradient(135deg, #f7cac9 60%, #92a8d1 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .avatar {
+      width: 120px;
+      height: 120px;
+      /* 正方形遮罩 */
+      clip-path: none;
+      -webkit-clip-path: none;
+      overflow: hidden;
+      border: 5px solid #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .card-right {
+      width: 55%;
+      padding: 32px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: linear-gradient(135deg, #ffffff 60%, #f7cac9 100%);
+    }
+    .name {
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: #f7cac9;
+      margin-bottom: 12px;
+      letter-spacing: 2px;
+    }
+    .desc {
+      font-size: 1.1rem;
+      color: #92a8d1;
+      margin-bottom: 8px;
+    }
+    .seventeen {
+      font-size: 1rem;
+      color: #b3b3b3;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <div class="card-left">
+      <div class="avatar">
+        <!-- 請將下方 img 的 src 換成蹦蹦的圖片網址 -->
+        <img src="0$.png" alt="0$ㄢ">
+      </div>
+    </div>
+    <div class="card-right">
+      <div class="name">林虔安</div>
+      <div class="desc">SEVENTEEN Carat</div>
+      <div class="desc">喜歡畫畫、音樂跟追星</div>
+      <div class="desc">繪帳IG：<a href="https://www.instagram.com/stc.0217" target="_blank" style="color:#92a8d1;text-decoration:underline;">stc.0217</a></div>
+      <div class="seventeen">#國北教藝設 #SEVENTEEN #軍嫂</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>期末作業網站</title>
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Noto Sans TC', 'Microsoft JhengHei', Arial, sans-serif;
+      background: #fff;
+      color: #333;
+    }
+    .banner {
+      background: linear-gradient(90deg, #f7b7c6 0%, #8fc6ec 100%);
+      color: #fff;
+      padding: 1.5rem 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .banner-nav {
+      margin-right: 2.5rem;
+      display: flex;
+      gap: 2rem;
+    }
+    .banner-nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+      transition: opacity 0.2s;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .banner-nav a:hover {
+      opacity: 0.8;
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .banner-nav { gap: 1rem; margin-right: 1rem; }
+      .banner { padding: 1rem 0; }
+    }
+    .section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem 1.5rem;
+      background: none;
+      border-radius: 0;
+      border: none;
+      box-shadow: none;
+    }
+    .section-title {
+      color: #e7a7b7;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1.2rem;
+      letter-spacing: 2px;
+    }
+    .about-flex {
+      display: flex;
+      gap: 3rem;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .about-photo {
+      flex: 0 0 260px;
+      max-width: 320px;
+      min-width: 160px;
+      height: 340px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 1rem 0.5rem;
+    }
+    .about-divider {
+      width: 2px;
+      background: linear-gradient(180deg, #f7b7c6 0%, #8fc6ec 100%);
+      height: 90%;
+      min-height: 180px;
+      margin: 0 1.5rem;
+      border-radius: 2px;
+      opacity: 0.7;
+    }
+    .about-info {
+      flex: 1 1 350px;
+      min-width: 220px;
+    }
+    .works-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.5rem;
+      margin-top: 2rem;
+    }
+    .work-item {
+      flex: 1 1 220px;
+      min-width: 180px;
+      background: #fff;
+      border: none;
+      border-radius: 0;
+      padding: 1.2rem;
+      text-align: center;
+      color: #e7a7b7;
+      font-weight: 500;
+      box-shadow: none;
+    }
+  </style>
+</head>
+<body>
+  <header class="banner">
+    <nav class="banner-nav">
+      <a href="#about">我是誰</a>
+      <a href="#works">我ㄉ作品</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="section-title">我是誰</div>
+      <div class="about-flex">
+        <!-- 左側：滾動照片牆預留 -->
+        <div class="about-photo">
+          <div style="color:#e7a7b7; font-size:1.1rem; margin-bottom:0.7rem;">照片牆預留</div>
+          <!-- 之後放照片 img -->
+        </div>
+        <div class="about-divider"></div>
+        <!-- 右側：自我介紹內容 -->
+        <div class="about-info">
+          <div style="color:#e7a7b7; font-weight:bold; font-size:1.15rem; margin-bottom:0.7rem;">我是林虔安，叫我0$就好 &gt;&lt;</div>
+          <div style="margin-bottom:0.7rem; color:#6b9ecf; font-weight:500;">INFP | 處女座 | O型 | 台北人 | 藝一乙</div>
+          <div style="margin-bottom:0.7rem;">喜歡畫畫、彈鋼琴、唱歌、聽JPOP、追星、看動漫，最近迷上了勾針 &gt;&lt; 不過只會看著影片勾一些小東西_(:з)∠)_</div>
+          <div>我也喜歡跟克拉們交朋友 &gt;&lt; 不要害羞來認識我ㄡ~~</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="section">
+      <div class="section-title">我ㄉ作品</div>
+      <div class="works-list">
+        <div class="work-item">作品 1</div>
+        <div class="work-item">作品 2</div>
+        <div class="work-item">作品 3</div>
+      </div>
+      <p style="color:#aaa; margin-top:1.5rem;">（這裡可以放作品圖片、連結或介紹）</p>
+    </section>
+  </main>
+</body>
+</html>
